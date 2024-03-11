@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class PeopleComponent {
   @Input() people: string[] = [];
-  @Input() favorite: string | null = null;
+  @Input() favorites: string[] | null = null;
   @Output() setFavorite: EventEmitter<string> = new EventEmitter<string>();
 
   doSetFavorite(name: string) {

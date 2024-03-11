@@ -1,4 +1,4 @@
 <div *ngFor="let person of people">
+    <input type="checkbox" (change)="doSetFavorite(person)" [checked]="favorites?.includes(person)">
     {{ person }}
-    <input type="checkbox" (change)="doSetFavorite(person)" [checked]="person === favorite">
 </div>
